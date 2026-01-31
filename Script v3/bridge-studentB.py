@@ -6,24 +6,22 @@ from datetime import datetime
 from influxdb_client import InfluxDBClient, Point
 from influxdb_client.client.write_api import SYNCHRONOUS
 
-# ==========================================
-#  1. CONFIGURATION SECTION
-# ==========================================
-
-# --- MQTT SETTINGS ---
+# --- 1. CONFIGURATION ---
 MQTT_BROKER = "broker.hivemq.com"
 MQTT_TOPIC = "monash/studentB/tunnel_data"
 
-# --- INFLUXDB SETTINGS ---
+# InfluxDB Settings
 INFLUX_URL = "http://localhost:8086"
-INFLUX_TOKEN = "tx2_FEOzI4qx-z4nSLiAFyLxwXyUmX4GBntWeTmcysrrB_LZEPlOB_uqI4y24bdVCPanTIj1a4iNQHcdpN7law=="
-INFLUX_ORG = "ShafwanCorporation"
-INFLUX_BUCKET = "SmartTunnel"
+INFLUX_TOKEN = "YOUR_INFLUX_TOKEN"
+INFLUX_ORG = "YOUR_INFLUX_ORG"
+INFLUX_BUCKET = "YOUR_INFLUX_BUCKET"
 
-# --- TELEGRAM SETTINGS ---
-#  PASTE YOUR REAL TOKEN BELOW:
-BOT_TOKEN = "8475604135:AAF1BMQi0Xckrik1BRtFHXyVBwtO3mNM3qM"
-CHAT_ID = "-1003275623160"
+# --- TELEGRAM CONFIGURATION ---
+# PASTE YOUR BOT TOKEN INSIDE THE QUOTES BELOW:
+BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+
+# I found this Chat ID in your screenshot:
+CHAT_ID = "YOUR_TELEGRAM_CHAT_ID"
 
 # --- SAFETY SETTINGS ---
 ALERT_COOLDOWN = 10   
