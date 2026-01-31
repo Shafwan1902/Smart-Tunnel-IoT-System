@@ -2,8 +2,6 @@
 
 A real-time IoT solution designed to detect flash floods in tunnels and automate safety barriers. This system leverages **ESP32**, **MQTT**, and a **Time-Series Database (InfluxDB)** to provide sub-second latency alerts and visualization.
 
-![Dashboard Preview](PLACEHOLDER_LINK_TO_YOUR_DASHBOARD_IMAGE_HERE)
-*(Add your Grafana Dashboard screenshot here)*
 
 ## 🚀 Project Overview
 Flash floods in urban tunnels pose a significant risk to safety. This project simulates a "Smart Tunnel" that autonomously:
