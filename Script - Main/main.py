@@ -4,13 +4,14 @@ from machine import Pin, ADC, time_pulse_us
 import network
 from umqttsimple import MQTTClient
 
-# --- CONFIGURATION ---
-WIFI_SSID = "iPhone"         # <--- CHANGE THIS
-WIFI_PASSWORD = "12345678"   # <--- CHANGE THIS
+# --- WI-FI CONFIGURATION (CHANGE THESE!) ---
+WIFI_SSID = "YOUR_WIFI_SSID"
+WIFI_PASSWORD = "YOUR_WIFI_PASSWORD"
 
+# --- MQTT CONFIGURATION ---
 MQTT_BROKER = "broker.hivemq.com"
-INFLUX_TOKEN = "YOUR_INFLUXDB_TOKEN"
-TELEGRAM_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+MQTT_CLIENT_ID = "MySmartTunnel_ESP32"
+MQTT_TOPIC = "monash/studentB/tunnel_data"
 
 # --- HARDWARE SETUP ---
 # LEDs
